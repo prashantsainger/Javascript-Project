@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="i-card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins, Helvetica, sans-serif';
+        }
+
+        .card {
+            width: 350px;
+            height: 400px;
+            background-color: rgba(64, 197, 241, 0.3);
+            border: 1px solid black;
+            border-radius: 30px;
+            margin: 60px auto;
+            margin-left: 30%;
+        }
+
+        .card-1 {
+            width: 100px;
+            height: 100px;
+            margin-left: 50%;
+            position: relative;
+            top: -10%;
+        }
+
+        .card-1 img {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            border: 1px solid black;
+        }
+
+
+        .detail {
+            width: 340px;
+            height: 200px;
+            color: black;
+            background-color: rgba(64, 197, 241, 0);
+            display: grid;
+            flex-direction: row;
+            text-align: center;
+            margin: 25px auto;
+            margin-top: 10px;
+        }
+
+        .detail h1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h1 span {
+            text-transform: lowercase;
+            display: flex;
+            margin-right: 40%;
+        }
+
+        h1 {
+            text-transform: capitalize;
+            font-size: 1rem;
+        }
+
+        .icon {
+            width: 100px;
+            height: 50px;
+            margin-top: -20px;
+            margin-left: 30px;
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li {
+            list-style: none;
+            margin: 0 5%;
+        }
+
+        .fa {
+            font-size: 1.5em;
+        }
+
+        .button {
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+        }
+
+        .but {
+            font-size: .8em;
+            display: flex;
+            align-items: center;
+            margin-top: -8%;
+        }
+
+        .but i {
+            margin: 2%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-1">
+            <img class="photo" src="Picture/1697184597537.jpg">
+        </div>
+        <div class="detail">
+            <h1>name : prashant sainger</h1>
+            <h1>email:<span> prashantsainger@gmail.com</span></h1>
+            <h1>contact: 9540896941</h1>
+            <h1>course : python full stack</h1>
+
+
+        </div>
+        <div class="icon">
+            <ul>
+                <li><i class="fa-brands fa-facebook fa"></i></li>
+                <li><i class="fa-brands fa-instagram fa"></i></li>
+                <li><i class="fa-brands fa-whatsapp fa"></i></li>
+                <li><i class="fa-brands fa-youtube fa"></i></li>
+                <li><i class="fa-brands fa-telegram fa"></i></li>
+
+            </ul>
+        </div>
+        <div class="button">
+
+            <div class="but">
+                <i class="fa-solid fa-reply"></i>
+                <p>43k</p>
+
+            </div>
+            <div class="but">
+                <i class="fa-solid fa-heart fa"></i>
+                <p>52k</p>
+
+            </div>
+            <div class="but">
+                <i class="fa-solid fa-message fa"></i>
+                <p>60k</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // -------------------------for-in--------------------------//
+        // let users = [
+        //     {
+        //         "name": "arjun kumar",
+        //         "email": "arjunkumar@gmail.com",
+        //         "mobile": "1800896941",
+        //         "course": "java full stack",
+        //         "photo": "Picture/baby.jpeg",
+        //     },
+        //     {
+        //         "name": "atul sharma",
+        //         "email": "atulsharma@gmail.com",
+        //         "mobile": "9540802020",
+        //         "course": "mern stack full stack",
+        //         "photo": "Picture/pic1.jpg",
+        //     },
+        //     {
+        //         "name": "diksha sharma",
+        //         "email": "dikshasharma@gmail.com",
+        //         "mobile": "1800802020",
+        //         "course": "web developer",
+        //         "photo": "Picture/home).jpg",
+
+        //     },
+        // ]
+        // for (
+        //     user in users
+        // ) {
+        //     document.write(`<div class="card">
+        //          <div class="card-1">
+        //          <img src="${users[user].photo}"></div>
+        //         <div class="detail">
+        //         <h1>name: ${users[user].name}</h1>
+        //          <h1>email:<span>${users[user].email}</span></h1>
+        //          <h1>mobile: ${users[user].mobile}</h1>
+        //          <h1>mobile: ${users[user].course}</h1>
+
+        //         </div>
+        //         <div class="icon">
+        //             <ul>
+        //            <li><i class="fa-brands fa-facebook fa"></i></li>
+        //             <li><i class="fa-brands fa-instagram fa"></i></li>
+        //                 <li><i class="fa-brands fa-whatsapp fa"></i></li>
+        //                 <li><i class="fa-brands fa-youtube fa"></i></li>
+        //                 <li><i class="fa-brands fa-telegram fa"></i></li>
+
+        //         </ul>
+        //         </div>
+        //         <div class="button">
+
+        //                 <div class="but">
+        //                 <i class="fa-solid fa-reply"></i>
+        //                 <p>43k</p>
+
+        //                 </div>
+        //                 <div class="but">
+        //                  <i class="fa-solid fa-heart fa"></i>
+        //      <p>52k</p>
+
+        //                  </div>
+        //                  <div class="but">
+        //                 <i class="fa-solid fa-message fa"></i>
+        //      <p>60k</p>
+        //                  </div>
+        //                       </div>
+
+        //                         </div>`);
+        // }
+        // -----------------------------------------end for-in--------------//
+
+
+        // ---------------whileloop---------------//
+        let count = 0;
+        const name = ["Prashant sainger", "Atul Sharma", "Ravi kumar"];
+        const email = ["prashantsainger@gmail.com", "atulsharma@gmail.com", "ravikumar@gmail.com"];
+        const mobile = ["180018001800", "8562378685", "5412356789"];
+        const course = ["Developer", "Javascript", "Python"];
+        const photo = ["Picture/home).jpg", "Picture/pic1.jpg", "Picture/baby.jpeg"];
+
+        while (count <= 2) {
+            document.write(`<div class="card">
+                 <div class="card-1">
+                 <img src="${photo[count]}"></div>
+                <div class="detail">
+                <h1>name: ${name[count]}</h1>
+                 <h1>email:<span>${email[count]}</span></h1>
+                 <h1>mobile: ${mobile[count]}</h1>
+                 <h1>mobile: ${course[count]}</h1>
+             
+                </div>
+                <div class="icon">
+                    <ul>
+                   <li><i class="fa-brands fa-facebook fa"></i></li>
+                    <li><i class="fa-brands fa-instagram fa"></i></li>
+                        <li><i class="fa-brands fa-whatsapp fa"></i></li>
+                        <li><i class="fa-brands fa-youtube fa"></i></li>
+                        <li><i class="fa-brands fa-telegram fa"></i></li>
+             
+                </ul>
+                </div>
+                <div class="button">
+                        
+                        <div class="but">
+                        <i class="fa-solid fa-reply"></i>
+                        <p>43k</p>
+             
+                        </div>
+                        <div class="but">
+                         <i class="fa-solid fa-heart fa"></i>
+             <p>52k</p>
+              
+                         </div>
+                         <div class="but">
+                        <i class="fa-solid fa-message fa"></i>
+             <p>60k</p>
+                         </div>
+                              </div>
+
+                                </div>`);
+            count++;
+
+        }
+    </script>
+</body>
+
+</html>

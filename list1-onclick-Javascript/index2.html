@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .panel {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            margin: 20vh auto;
+            background-color: whitesmoke;
+        }
+
+        .panel ul {
+            display: flex;
+            gap: 20px;
+        }
+
+        .panel ul li {
+            list-style: none;
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <hr>
+    <h1 id="title">Hello In HTML</h1>
+    <hr>
+
+
+
+    <div class="panel">
+        <ul>
+            <li onclick="document.getElementById('title').style.color='red'">red</li>
+            <li onclick="document.getElementById('title').style.color='green'">green</li>
+            <li onclick="document.getElementById('title').style.color='gold'">gold</li>
+        </ul>
+
+        <ul>
+            <li onclick="document.getElementById('title').style.textAlign='left'">left</li>
+            <li onclick="document.getElementById('title').style.textAlign='center'">center</li>
+            <li onclick="document.getElementById('title').style.textAlign='right'">right</li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+
+
+
+</body>
+
+</html>

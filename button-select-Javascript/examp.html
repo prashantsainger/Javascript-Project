@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 500px;
+            height: 300px;
+            background-color: white;
+            border: 2px solid rgb(39, 5, 5);
+            box-shadow: 20px 30px 40px rgb(49, 4, 4);
+            margin-top: 8%;
+            margin-left: 30%;
+        }
+        
+        .color {
+            display: flex;
+            background-color: chocolate;
+            justify-content: space-around;
+            gap: 5%;
+            border-bottom: 2px solid tomato;
+            box-shadow: 2px 10px 50px gray;
+        }
+        
+        button {
+            text-transform: capitalize;
+            width: 100px;
+            height: 50px;
+            color: white;
+            background-color: gray;
+            font-size: 1.5em;
+            border-radius: 10px;
+            margin-bottom: 2%;
+            margin-top: 2%;
+            box-shadow: 2px 4px 8px grey;
+        }
+        
+        .red {
+            background-color: red;
+            gap: 20px;
+        }
+        
+        .yel {
+            background-color: yellow;
+        }
+        
+        .gre {
+            background-color: green;
+        }
+        
+        #clr {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        
+        .gap {
+            gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="color">
+            <button onclick="user('clr')">all</button>
+            <button class="red" onclick="user('re')">red</button>
+            <button class="yel" onclick="user('ye')">yellow</button>
+            <button class="gre" onclick="user('gr')">green</button>
+        </div>
+        <div id="clr">
+            <div id="re" class="gap">
+                <button class="red">red</button>
+                <button class="red">red</button>
+                <button class="red">red</button>
+                <button class="red">red</button>
+
+            </div>
+
+            <div id="ye" class="gap">
+                <button class="yel">yellow</button>
+                <button class="yel">yellow</button>
+                <button class="yel">yellow</button>
+                <button class="yel">yellow</button>
+
+            </div>
+
+
+            <div id="gr" class="gap">
+                <button class="gre">green</button>
+                <button class="gre">green</button>
+                <button class="gre">green</button>
+                <button class="gre">green</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function user(data) {
+            if (data == 'clr') {
+                document.getElementById('clr').style.display = 'flex';
+                document.getElementById('re').style.display = 'flex';
+                document.getElementById('gr').style.display = 'flex';
+                document.getElementById('ye').style.display = 'flex';
+            } else if (data == 're') {
+                document.getElementById('re').style.display = 'flex';
+                document.getElementById('ye').style.display = 'none';
+                document.getElementById('gr').style.display = 'none';
+            } else if (data == 'gr') {
+                document.getElementById('re').style.display = 'none';
+                document.getElementById('gr').style.display = 'flex';
+                document.getElementById('ye').style.display = 'none';
+
+
+            } else if (data == 'ye') {
+                document.getElementById('re').style.display = 'none';
+                document.getElementById('gr').style.display = 'none';
+                document.getElementById('ye').style.display = 'flex';
+
+
+            }
+        }
+    </script>
+</body>
+
+</html>

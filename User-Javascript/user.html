@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .head {
+            padding: 2% 5%;
+            background-color: #404040;
+        }
+
+        .head ul {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+        }
+
+        .head ul li {
+            list-style: none;
+            color: white;
+            padding: 1%;
+            background-color: teal;
+            border-radius: 10px;
+        }
+
+        #login {
+            width: 40%;
+            height: 40vh;
+            background-color: tomato;
+            margin: auto;
+            display: none;
+        }
+
+        #register {
+            width: 40%;
+            height: 40vh;
+            background-color: teal;
+            margin: auto;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="head">
+        <ul>
+            <li onclick="user('login')">Login</li>
+            <li onclick="user('register')">Register</li>
+        </ul>
+    </div>
+
+
+    <div id="login">
+        <form method="post">
+            <input type="email" name="uid">
+
+        </form>
+    </div>
+    <div id="register"></div>
+
+    <script>
+        function user(data) {
+
+            if (data == 'login') {
+                document.getElementById('login').style.display = 'block';
+                document.getElementById('register').style.display = 'none'
+            }
+            else if (data == 'register') {
+                document.getElementById('register').style.display = 'block';
+                document.getElementById('login').style.display = 'none';
+            }
+
+
+
+
+
+
+        }
+    </script>
+
+</body>
+
+</html>

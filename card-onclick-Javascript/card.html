@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            width: 600px;
+            min-height: 40vh;
+            background-color: whitesmoke;
+        }
+
+        .container {
+            width: 800px;
+            height: 500px;
+            background-color: whitesmoke;
+            display: flex;
+            padding: 20px;
+            margin-top: 07%;
+            margin-left: 15%;
+
+        }
+
+        .aside {
+            width: 800px;
+            border: 2px 2px 2px 0px;
+            border-color: black;
+            border-style: solid;
+            display: flex;
+        }
+
+        .side {
+            width: 40%;
+            justify-content: left;
+            border: 0px solid black;
+           
+        }
+
+        .content {
+            width: 500px;
+            height: 410px;
+            border: 2px;
+            border-color: black;
+            border-style: solid;
+            margin: 5%;
+
+        }
+
+        .msg {
+            width: 100%;
+            height: 16.3%;
+            border: 1px solid black;
+           
+        }
+
+        .txt {
+            width: 300px;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            margin-left: 10px;
+        }
+
+        .fon {
+            height: 28px;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1px;
+            justify-content: left;
+
+        }
+
+        h3{
+        text-transform: capitalize;
+    }
+        .photo {
+            width: 120px;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            /* justify-content:right; */
+            margin-left: 70%;
+            }
+            .ph{
+                width: 120px;
+                height: 120px;
+                border-radius: 10px;
+                margin-top: 100%;
+            }
+
+        img {
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+
+        }
+        .fon-chng{
+            /* display: flex; */
+            /* justify-content: center; */
+            margin-left: 15px;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 8px;
+        }
+
+        .msg ul li {
+            list-style: none;
+            border: 1px;
+            border-color: black;
+            border-style: solid;
+            cursor: pointer;
+        }
+
+        .div1 {
+            width: 22px;
+            height: 22px;
+            background-color: red;
+            cursor: pointer;
+            margin: 12px;
+            float: left;
+        }
+
+        .div2 {
+            width: 22px;
+            height: 22px;
+            background-color: gray;
+            cursor: pointer;
+            margin: 12px;
+            float: left;
+
+        }
+
+        .div3 {
+            width: 22px;
+            height: 22px;
+            background-color: skyblue;
+            cursor: pointer;
+
+            margin: 12px;
+            float: left;
+
+        }
+
+        .div4 {
+            width: 22px;
+            height: 22px;
+            background-color: brown;
+            cursor: pointer;
+
+            margin: 12px;
+            float: left;
+
+        }
+
+        .div5 {
+            width: 22px;
+            height: 22px;
+            background-color: chocolate;
+            cursor: pointer;
+
+            margin: 12px;
+            float: left;
+
+        }
+
+        .div6 {
+            width: 22px;
+            height: 22px;
+            background-color: blueviolet;
+            cursor: pointer;
+            font-family: ;
+            margin: 12px;
+            float: left;
+
+        }
+        .wid{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="aside">
+            <div class="side">
+                <div class="msg">
+                    <div class="fon-chng">
+                        <h3>change text colour</h3>
+                    </div>
+
+                    <div class="div1" onclick="document.getElementById('color').style.color='red'"></div>
+                    <div class="div2" onclick="document.getElementById('color').style.color='gray'"></div>
+                    <div class="div3" onclick="document.getElementById('color').style.color='skyblue'"></div>
+                    <div class="div4" onclick="document.getElementById('color').style.color='brown'"></div>
+                    <div class="div5" onclick="document.getElementById('color').style.color='chocolate'"></div>
+                    <div class="div6" onclick="document.getElementById('color').style.color='blueviolet'"></div>
+
+                </div>
+
+                <div class="msg">
+                    <div class="fon-chng">
+
+                    <h3>fontfamily</h3>
+                    
+                        <ul>
+                            <li onclick="document.getElementById('color').style.fontFamily='Poppins'">Poppins</li>
+                            <li onclick="document.getElementById('color').style.fontFamily='sans-serif'">sans-serif</li>
+                            <li onclick="document.getElementById('color').style.fontFamily='Arial Narrow'">Arial Narrow
+                            </li>
+
+                        </ul>
+                    
+
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="fon-chng">
+
+                    <h3>fontsize</h3>
+                    
+                        <ul>
+                            <li onclick="document.getElementById('color').style.fontSize='0.5rem'">small</li>
+                            <li onclick="document.getElementById('color').style.fontSize='1rem'">medium</li>
+                            <li onclick="document.getElementById('color').style.fontSize='2rem'">large</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="msg">
+                    <div class="fon-chng">
+                        <h3>text shadow</h3>
+                        <ul>
+                            <li onclick="document.getElementById('color').style.textShadow='-2px -2px 2px #404040, 2px 2px 2px #404040'">shadow1</li>
+                            <li onclick="document.getElementById('color').style.textShadow='5px 2px 8px #232325, 3px 8px 8px #404040'">shadow1</li>
+                            <li onclick="document.getElementById('color').style.textShadow='2px 5px 15px #394825, 3px 8px 8px #304325'">shadow3</li>
+
+                        </ul>
+                </div>
+            </div>
+
+                <div class="msg">
+                    <div class="fon-chng">
+                        <h3>photo change</h3>
+                        <img src="image 4.jpg" onclick="clickimg(this)">
+            <img src="image 1.jpg" onclick="clickimg(this)">
+            <img src="image 2.jpg" onclick="clickimg(this)">
+            <img src="image 3.jpg" onclick="clickimg(this)">
+                </div>
+                </div>
+                <div class="msg">
+                    <div class="fon-chng">
+
+                        <h3>fontsize</h3>
+                        
+                            <ul>
+                                <li onclick="document.getElementById('color').style.fontSize='0.5rem'">small</li>
+                                <li onclick="document.getElementById('color').style.fontSize='1rem'">medium</li>
+                                <li onclick="document.getElementById('color').style.fontSize='2rem'">large</li>
+    
+                            </ul>
+                        </div>
+                </div>
+            </div>
+            <div class="content">
+
+
+                <div class="photo">
+                    <img class="ph" id="bnr" src="Image 1.jpg" alt="">
+                </div>
+                <div class="txt" id="color">
+
+                    <h4 class="fon"><span>Name Prashant Sainger</span></h4>
+                    <h4 class="fon"><span>Email prashantsainger@gmail.com</span></h4>
+                    <h4 class="fon"><span>Mobile 9540896941</span></h4>
+
+                    <h4><span>Profile</span><span> Developer</span></h4>
+                </div>
+            </div>
+
+
+            
+        </div>
+
+    </div>
+
+    </div>
+    <script>
+        function clickimg(newImg){
+            let getImg=document.getElementById("bnr")
+            getImg.src=newImg.src;
+        }
+    </script>
+</body>
+
+</html>

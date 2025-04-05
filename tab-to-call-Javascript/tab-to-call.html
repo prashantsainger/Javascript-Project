@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="tab('html')">html</button>
+    <button onclick="tab('css')">css</button>
+    <button onclick="tab('javascript')">javascript</button>
+    <button onclick="tab('react')">react</button>
+    <button onclick="tab('node')">node</button>
+
+    <h1 id="title">Welcome to Heading</h1>
+
+    <script>
+        function tab(data) {
+            document.getElementById('title').innerHTML = data;
+        }
+    </script>
+
+</body>
+
+</html>
